@@ -3,7 +3,7 @@
 Autism Spectrum Disorder (ASD) is a psychiatric disorder that leads to communication impairment. My main purpose in this project was to identify ASD patients from healthy controls given fMRI data from the ABIDE1 dataset. ABIDE I involved 17 international sites, sharing previously collected resting state fMRI including 539 from individuals with ASD and 573 from typical controls.
 
 In this project, I focused on the automated detection of autism spectrum disorder using two distinct variants of  graph neural networks including Graph Attention Neural Network (GAT) and GraphSAGE. I utilized the Nilearn library to fetch the ABIDE dataset and then I extracted fMRI time series from ROIs in the atlas.  Then, I constructed a graph using a functional connectivity matrix obtained from calculating the correlation between the time series for each subject and used different centralities and  statistics  of  the  fMRI  time  series  as  the  node  features. The graph nodes represent  brain  ROIs  and  edges  denote  the  interactions  between the regions and their activities
-![Image alt text](/img/2.PNG) 
+![Image alt text] 
 
 ## Baseline
 Having built the graphs, I took advantage of two architectures of Graph Neural Networks (Graph Attention Neural Networks and GraphSAGE) for classifying each subject as ASD or healthy control. For the construction of graph neural networks, I used PyTorch and PyTorch Geometric packages. 
